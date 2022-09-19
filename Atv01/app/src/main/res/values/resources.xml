@@ -5,7 +5,16 @@
         <item>Desenvolvedor</item>
         <item>Funcionário Publico</item>
         <item>Desempregado</item>
+    </string-array>
 
+    <string-array name="sports_array">
+        <item>Shuttle Badminton</item>
+        <item>Tennis</item>
+        <item>FootBall</item>
+        <item>Basket Ball</item>
+        <item>Table Tennis</item>
+        <item>Chess</item>
+        <item>Hockey</item>
     </string-array>
 
 </resources>

@@ -122,6 +122,7 @@
                 <Button
                     android:id="@+id/btnTextEdit"
                     android:layout_width="24dp"
+                    android:minWidth="24dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
                     android:layout_marginEnd="12dp"
@@ -134,30 +135,109 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:scrollbars="vertical"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="189dp"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
-
-                <TextView
-                    android:id="@+id/arryStrings"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_marginTop="24dp"
-                    android:layout_marginEnd="12dp"
-                    android:minHeight="48dp"
-                    android:layout_height="wrap_content"
-                    android:text="" />
+                    android:layout_height="189dp"
+                    android:orientation="vertical">
 
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/arryStrings"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="24dp"
+                                android:layout_marginEnd="12dp"
+                                android:minHeight="48dp"
+                                android:text="" />
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
                 <Button
                     android:id="@+id/clearArray"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_height="wrap_content"
                     android:text="Limpar" />
             </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/RDGP"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="1"
+                    android:text="RadioButton" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="1"
+                    android:text="RadioButton" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/menuBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="12dp"
+
+                android:layout_weight="1"
+                android:text="Popup Menu" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+<!--            <ImageView-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:src="@drawable/android" />-->
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="Alterar Activity" />
         </LinearLayout>
 
     </LinearLayout>
