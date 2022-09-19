@@ -11,6 +11,7 @@ public class Entity {
         this.occupation = occupation;
     }
 
+
     @Override
     public String toString() {
         return "Entity{" +

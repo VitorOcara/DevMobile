@@ -55,6 +55,10 @@ public class MainActivity extends AppCompatActivity {
         inflater.inflate(R.menu.main_menu, menu);
         return true;
     }
+    public void alterScreen(View view){
+        Intent i = new Intent(MainActivity.this, Secondary.class);
+        startActivity(i);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -179,13 +183,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
 //        alterarACtivity
-//        alterActivity.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent i = new Intent(MainActivity.this, Secondary.class);
-//                startActivity(i);
-//            }
-//        });
+
+
+
 
 
     }
